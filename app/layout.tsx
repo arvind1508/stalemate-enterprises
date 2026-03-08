@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://stalemate-enterprises.com"),
+  metadataBase: new URL("https://stalemateenterprises.in"),
   icons: {
     icon: [],
     shortcut: [],
