@@ -3,12 +3,13 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { withBasePath } from "@/lib/paths";
 
 export default function Hero() {
   return (
     <section className="relative isolate flex min-h-[calc(100vh-5rem)] items-center overflow-hidden px-6 py-14 md:px-10" id="top">
       <Image
-        src="/project-images/3ce60c9b-840b-41cf-9fc2-98a585710363.jpg"
+        src={withBasePath("/project-images/3ce60c9b-840b-41cf-9fc2-98a585710363.jpg")}
         alt="Luxury interior project"
         fill
         priority

@@ -3,6 +3,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { withBasePath } from "@/lib/paths";
 import type { Project } from "@/lib/projects";
 import { projects } from "@/lib/projects";
 
@@ -66,7 +67,7 @@ export default function PortfolioGallery({ id = "projects", showHeading = true, 
               >
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <Image
-                    src={project.image}
+                    src={withBasePath(project.image)}
                     alt={project.title}
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 33vw"
@@ -112,7 +113,7 @@ export default function PortfolioGallery({ id = "projects", showHeading = true, 
 
               <div className="relative h-[72vh] overflow-hidden rounded-sm border border-white/15 bg-brand-deep">
                 <Image
-                  src={selectedProject.image}
+                  src={withBasePath(selectedProject.image)}
                   alt={selectedProject.title}
                   fill
                   sizes="100vw"
