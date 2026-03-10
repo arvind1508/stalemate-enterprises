@@ -56,8 +56,8 @@ export default function ContactForm({ id = "contact", showHeading = true }: Cont
             <div className="mt-8 space-y-4 text-sm tracking-[0.08em]">
               <p>
                 <span className="block text-brand-gold">Email</span>
-                <a href="mailto:stalemateent@gmail.com" className="text-brand-text hover:text-brand-gold">
-                  stalemateent@gmail.com
+                <a href="mailto:Stalemateenter@outlook.com" className="text-brand-text hover:text-brand-gold">
+                  Stalemateenter@outlook.com
                 </a>
               </p>
               <p>
